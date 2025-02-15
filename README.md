@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +23,8 @@
             box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
             max-width: 90%;
             width: 400px;
-        <img src="images/foto.jpg" alt="IMG_3520.webp">
+        }
+        .image-space {
             width: 100%;
             height: 200px;
             background: rgba(255, 255, 255, 0.1);
@@ -62,7 +62,7 @@
 <body>
     <div class="container">
         <h1>$MOONHOWL$</h1>
-        <img src="images/foto.jpg" alt="IMG_3520.webp">
+        <div class="image-space">Your image here</div>
         <p>Join the $MOONHOWL$ revolution! A strong community, a powerful movement, and the potential for great rewards. Don’t miss out—be part of the future today!</p>
         
         <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank"> Buy $MOONHOWL$ </a>
@@ -77,7 +77,7 @@
       
         <p>🔥 Don't miss out! This is your last chance to buy $MOONHOWL$ at a low price. Join now and maximize your gains—early adopters win big! 🚀</p>
       
-        <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ Now</a>
+        <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ </a>
     </div>
     <div class="footer">
         <p>© 2024 $MOONHOWL$ Community | All Rights Reserved</p>
