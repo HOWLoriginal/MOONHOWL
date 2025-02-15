@@ -97,8 +97,7 @@
         <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ </a>
     </div>
     <div class="chart-container">
-        <iframe id="dextools-widget"
-            title="DEXTools Trading Chart"
+        
             src=<iframe id="dextools-widget"
     title="DEXTools Trading Chart"
     width="500" height="400"
