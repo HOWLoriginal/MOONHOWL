@@ -24,8 +24,7 @@
             box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
             max-width: 90%;
             width: 400px;
-        }
-        .image-space {
+        <img src="images/foto.jpg" alt="IMG_3520.webp">
             width: 100%;
             height: 200px;
             background: rgba(255, 255, 255, 0.1);
