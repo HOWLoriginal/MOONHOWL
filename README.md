@@ -97,10 +97,10 @@
         <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ </a>
     </div>
     <div class="chart-container">
-        
-    title="DEXTools Trading Chart"
-    width="500" height="400"
-    src="https://www.dextools.io/widget-chart/en/solana/pe-light/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe>">
+        <iframe id="dextools-widget"
+            title="DEXTools Trading Chart"
+            src="https://www.dextools.io/widget-chart/en/solana/pe-dark/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false">
+        </iframe>
     </div>
     <div class="footer">
         <p>© 2024 $MOONHOWL$ Community | All Rights Reserved</p>
