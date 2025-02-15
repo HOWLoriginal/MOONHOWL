@@ -78,7 +78,7 @@
       
         <p>🔥 Don't miss out! This is your last chance to buy $MOONHOWL$ at a low price. Join now and maximize your gains—early adopters win big! 🚀</p>
       
-        <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">💰 Buy $MOONHOWL$ Now</a>
+        <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ Now</a>
     </div>
     <div class="footer">
         <p>© 2024 $MOONHOWL$ Community | All Rights Reserved</p>
