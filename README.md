@@ -98,11 +98,9 @@
     </div>
     <div class="chart-container">
         
-            src=<iframe id="dextools-widget"
     title="DEXTools Trading Chart"
     width="500" height="400"
     src="https://www.dextools.io/widget-chart/en/solana/pe-light/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe>">
-        </iframe>
     </div>
     <div class="footer">
         <p>© 2024 $MOONHOWL$ Community | All Rights Reserved</p>
