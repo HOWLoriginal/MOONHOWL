@@ -66,7 +66,7 @@
         <div class="image-space">Your image here</div>
         <p>Join the $MOONHOWL$ revolution! A strong community, a powerful movement, and the potential for great rewards. Don’t miss out—be part of the future today!</p>
         
-        <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">🔥 Buy $MOONHOWL$ Now 🔥</a>
+        <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank"> Buy $MOONHOWL$ </a>
         
         <p>Join our growing community and be part of the movement! Connect with like-minded individuals, share insights, and stay updated on all things $MOONHOWL$.</p>
       
