@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -62,6 +62,16 @@
             font-size: 12px;
             opacity: 0.8;
         }
+        .chart-container {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .chart-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -86,13 +96,14 @@
       
         <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ </a>
     </div>
+    <div class="chart-container">
+        <iframe id="dextools-widget"
+            title="DEXTools Trading Chart"
+            src="https://www.dextools.io/widget-chart/en/solana/pe-dark/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false">
+        </iframe>
+    </div>
     <div class="footer">
         <p>© 2024 $MOONHOWL$ Community | All Rights Reserved</p>
     </div>
-    <iframe id="dextools-widget"
-        title="DEXTools Trading Chart"
-        width="500" height="400"
-        src="https://www.dextools.io/widget-chart/en/solana/pe-light/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?theme=light&chartType=2&chartResolution=30&drawingToolbars=false">
-    </iframe>
 </body>
 </html>
