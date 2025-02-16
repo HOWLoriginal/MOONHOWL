@@ -112,6 +112,7 @@ Are you ready to be part of something massive? Join the HOWL movement today and 
       
         <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ </a>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -168,43 +169,35 @@ Are you ready to be part of something massive? Join the HOWL movement today and 
         <div class="howl-meter-bar" id="howlMeter"></div>
     </div>
 
-    <button class="howl-btn" onclick="increaseHowlMeter()">Huil voor $MOONHOWL$! 🐺</button>
+    <button class="howl-btn" onclick="increaseHowlMeter()">Howl for $MOONHOWL$! 🐺</button>
 
     <script>
-    let howlScore = parseInt(localStorage.getItem("howlScore")) || 0;
-    let totalVisitors = parseInt(localStorage.getItem("totalVisitors")) || 0;
-    let totalClicks = parseInt(localStorage.getItem("totalClicks")) || 0;
+        let howlScore = localStorage.getItem("howlScore") || 0;
 
-    // Controleer of deze gebruiker al is geteld als bezoeker
-    if (!sessionStorage.getItem("hasVisited")) {
-        sessionStorage.setItem("hasVisited", "true");
-        totalVisitors++;
-        localStorage.setItem("totalVisitors", totalVisitors);
-    }
+        function updateMeter() {
+            let meter = document.getElementById("howlMeter");
+            let percentage = Math.min(howlScore, 100); // Max 100%
+            meter.style.width = percentage + "%";
+        }
 
-    function updateMeter() {
-        let dynamicIncrease = (totalVisitors * 0.2) + (totalClicks * 0.5); // Dynamische stijging op basis van bezoekers en klikken
-        howlScore = Math.min(dynamicIncrease, 100); // Maximaal 100%
-        localStorage.setItem("howlScore", howlScore);
+        function increaseHowlMeter() {
+            howlScore = Math.min(parseInt(howlScore) + 0.2, 100); // Stijgt met 10% per klik
+            localStorage.setItem("howlScore", howlScore);
+            updateMeter();
+        }
 
-        document.getElementById("howlCount").innerText = howlScore.toFixed(1) + "%";
-        document.getElementById("howlBar").style.width = howlScore + "%";
-    }
+        // Bij het laden van de pagina stijgt de meter automatisch een beetje
+        document.addEventListener("DOMContentLoaded", function () {
+            howlScore = Math.min(parseInt(howlScore) + 0.5, 100); // 5% per paginalaad
+            localStorage.setItem("howlScore", howlScore);
+            updateMeter();
+        });
 
-    function howl() {
-        totalClicks++;
-        localStorage.setItem("totalClicks", totalClicks);
-        updateMeter();
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        updateMeter();
-    });
-</script>
-
+    </script>
 
 </body>
 </html>
+
 
         
         
