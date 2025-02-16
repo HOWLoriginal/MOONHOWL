@@ -112,12 +112,11 @@ Are you ready to be part of something massive? Join the HOWL movement today and 
       
         <a href="https://pump.fun/coin/7ogRgT7QK3FC1pGFyebR3AMPaqhVFf2d68nigm9Wpump?coins_sort=market_cap" class="btn" target="_blank">Buy $MOONHOWL$ </a>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moonhowl Community Vote</title>
+    <title>MoonHowl Howl Meter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -127,77 +126,77 @@ Are you ready to be part of something massive? Join the HOWL movement today and 
             margin: 0;
             padding: 20px;
         }
-        .container {
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
+        .howl-meter-container {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            background: rgba(255, 215, 0, 0.2);
             border-radius: 10px;
-            display: inline-block;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+            padding: 10px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         }
-        .bar-container {
-            width: 100%;
-            background: grey;
-            border-radius: 10px;
-            margin-top: 10px;
-            overflow: hidden;
-        }
-        .bar {
-            height: 30px;
-            width: 0%;
+        .howl-meter-bar {
+            height: 20px;
             background: linear-gradient(45deg, #ff9900, #ff0000);
+            width: 0%;
+            border-radius: 10px;
             transition: width 0.5s ease-in-out;
         }
-        button {
+        .howl-btn {
             margin-top: 15px;
             padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
+            font-size: 18px;
             color: white;
-            background: #ff4500;
+            background: #ff0000;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
+            border-radius: 5px;
             transition: 0.3s;
         }
-        button:hover {
-            background: #ff6600;
+        .howl-btn:hover {
+            background: #ff9900;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>What Should Be the Next Step for Moonhowl?</h1>
-        <p>Vote to shape the future of our community!</p>
-        
-        <button onclick="vote()">Vote for NFT Collection</button>
-        <div class="bar-container">
-            <div class="bar" id="voteBar"></div>
-        </div>
-        <p id="voteCount">Votes: 0</p>
+
+    <h1>$MOONHOWL$ - Howl Meter 🐺</h1>
+    <p>Hoe luider de roedel huilt, hoe hoger de meter stijgt!</p>
+
+    <div class="howl-meter-container">
+        <div class="howl-meter-bar" id="howlMeter"></div>
     </div>
-    
+
+    <button class="howl-btn" onclick="increaseHowlMeter()">Huil voor $MOONHOWL$! 🐺</button>
+
     <script>
-        let votes = localStorage.getItem('votes') ? parseInt(localStorage.getItem('votes')) : 0;
-        let clicks = localStorage.getItem('clicks') ? parseInt(localStorage.getItem('clicks')) : 0;
+        let howlScore = localStorage.getItem("howlScore") || 0;
 
-        function vote() {
-            votes++;
-            clicks++;
-            localStorage.setItem('votes', votes);
-            localStorage.setItem('clicks', clicks);
-            updateBar();
+        function updateMeter() {
+            let meter = document.getElementById("howlMeter");
+            let percentage = Math.min(howlScore, 100); // Max 100%
+            meter.style.width = percentage + "%";
         }
 
-        function updateBar() {
-            let percentage = Math.min(100, (clicks * 2) + (votes * 3)); // Adjust growth dynamically
-            document.getElementById('voteBar').style.width = percentage + '%';
-            document.getElementById('voteCount').innerText = `Votes: ${votes}`;
+        function increaseHowlMeter() {
+            howlScore = Math.min(parseInt(howlScore) + 10, 100); // Stijgt met 10% per klik
+            localStorage.setItem("howlScore", howlScore);
+            updateMeter();
         }
 
-        updateBar();
+        // Bij het laden van de pagina stijgt de meter automatisch een beetje
+        document.addEventListener("DOMContentLoaded", function () {
+            howlScore = Math.min(parseInt(howlScore) + 5, 100); // 5% per paginalaad
+            localStorage.setItem("howlScore", howlScore);
+            updateMeter();
+        });
+
     </script>
+
 </body>
 </html>
+
         
         
     <div class="chart-container">
