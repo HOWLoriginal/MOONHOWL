@@ -180,14 +180,14 @@ Are you ready to be part of something massive? Join the HOWL movement today and 
         }
 
         function increaseHowlMeter() {
-            howlScore = Math.min(parseInt(howlScore) + 0.2, 100); // Stijgt met 10% per klik
+            howlScore = Math.min(parseInt(howlScore) + 1, 100); // Stijgt met 10% per klik
             localStorage.setItem("howlScore", howlScore);
             updateMeter();
         }
 
         // Bij het laden van de pagina stijgt de meter automatisch een beetje
         document.addEventListener("DOMContentLoaded", function () {
-            howlScore = Math.min(parseInt(howlScore) + 0.5, 100); // 5% per paginalaad
+            howlScore = Math.min(parseInt(howlScore) + 1, 100); // 5% per paginalaad
             localStorage.setItem("howlScore", howlScore);
             updateMeter();
         });
